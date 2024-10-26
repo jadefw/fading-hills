@@ -1,13 +1,57 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { Image } from 'astro:assets';
 import Layout from "../layouts/MainLayout.astro";
+
+import imgNils from '../../public/member/nils.jpg';
+import imgOliver from '../../public/member/oliver.jpg';
+import imgAlex from '../../public/member/alex.jpg';
+import imgFabian from '../../public/member/fabian.jpg';
 ---
 
 <Layout title={SITE_TITLE}>
 	<div class="h-[7rem] w-full"></div>
 	<main class="max-w-5xl mx-auto">
 
-		<h1 class="tracking-tight">Unsere Bandmitglieder</h1>
+		<h1 class="tracking-tight text-center">Unsere Bandmitglieder</h1>
 
+		<div class="flex flex-wrap justify-center gap-y-5 gap-x-10">
+			<div class="flex flex-col items-center">
+				<Image src={imgNils} alt="Nils" width={400} class="rounded-xl" />
+				<h4>Nils Stoppelbein</h4>
+				<ul class="list-disc">
+					<li>Vocal</li>
+					<li>Guitar</li>
+				</ul>
+			</div>
+
+			<div class="flex flex-col items-center">
+				<Image src={imgOliver} alt="Oliver" width={400} class="rounded-xl" />
+				<h4>Oliver Dillenkofer</h4>
+				<ul class="list-disc">
+					<li>Guitar</li>
+					<li>Backing Vocals</li>
+				</ul>
+			</div>
+
+			<div class="flex flex-col items-center">
+				<Image src={imgAlex} alt="Alexander" width={400} class="rounded-xl" />
+				<h4>Alexander Linss</h4>
+				<ul class="list-disc">
+					<li>Bass</li>
+					<li>Backing Vocals</li>
+				</ul>
+			</div>
+
+			<div class="flex flex-col items-center">
+				<Image src={imgFabian} alt="Fabian" width={400} class="rounded-xl" />
+				<h4>Fabian Krieger</h4>
+				<ul class="list-disc">
+					<li>Drums</li>
+					<li>Backing Vocals</li>
+				</ul>
+			</div>
+			
+		</div>
 	</main>
 </Layout>
