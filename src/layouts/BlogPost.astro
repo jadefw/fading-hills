@@ -10,14 +10,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <Layout title='Blog Post'>
 	<div class="h-[7rem] w-full"></div>
 
-	<main class="max-w-5xl mx-auto px-5">
+	<main class="max-w-5xl mx-auto px-5 w-screen">
 		<article>
 			<div class="hero-image">
-				{heroImage && <img src={heroImage} alt="" class="rounded-xl w-full lg:w-[63.75rem]" />}
+				{heroImage && <img width={1020} height={510} src={heroImage} alt="" class="rounded-xl" />}
 			</div>
 			<div class="max-w-4xl mx-auto">
 				<div class="mt-4">
-					<div class="">
+					<div>
 						<FormattedDate date={pubDate} />
 						{
 							updatedDate && (
