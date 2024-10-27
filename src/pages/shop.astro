@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/MainLayout.astro';
+
+import placeholder from '../../public/placeholder.svg'
+import shirt from '../../public/shop/tshirts.jpg'
+---
+
+<Layout title="Shop">
+	<div class="h-[7rem] w-full"></div>
+
+    <main class="max-w-5xl mx-auto mb-10">
+        <h1 class="tracking-tight text-center">Shop</h1>
+
+        <div class="flex flex-col items-center">
+            <Image src={shirt} alt="Placeholder" width={400} class="rounded-xl" />
+            <p class="">
+                Band Tshirt <br />
+                <b>24,99€</b>
+            </p>
+        </div>
+
+        <p class="text-center mt-5">
+            Bei Interesse, wende dich gerne an ein Bandmitglied, <br />
+            oder schreibe uns eine Direknachricht.
+        </p>
+
+    </main>
+</Layout>

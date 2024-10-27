@@ -10,10 +10,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <Layout title='Blog Post'>
 	<div class="h-[7rem] w-full"></div>
 
-	<main class="max-w-5xl mx-auto">
+	<main class="max-w-5xl mx-auto px-5">
 		<article>
 			<div class="hero-image">
-				{heroImage && <img width={1020} height={510} src={heroImage} alt="" class="rounded-xl" />}
+				{heroImage && <img src={heroImage} alt="" class="rounded-xl w-full lg:w-[63.75rem]" />}
 			</div>
 			<div class="max-w-4xl mx-auto">
 				<div class="mt-4">
