@@ -1,5 +1,5 @@
 ---
-title: 'Unser Auftritt beim Rock am Markt'
+title: 'Unser Auftritt auf dem Turbojugendtreffen!'
 description: ''
 pubDate: 'Dec 12 2024'
 heroImage: '/blog/ram-2024/11.JPG'
