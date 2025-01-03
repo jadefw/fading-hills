@@ -33,6 +33,19 @@ import Layout from "../layouts/MainLayout.astro";
 		height: 100dvh;
 	}
 
+	@media (max-width: 425px) {
+		#landing-section {
+			background-size: 160%;
+			background-repeat: no-repeat;
+			background-position: top;
+			/* margin-top: 7rem; */
+		}
+
+		#landing-section > div {
+			margin-top: 10rem;
+		}
+	}
+
 	#title {
 		text-shadow: 0 0 100px rgba(255, 255, 255, .7);
 	}

@@ -3,7 +3,7 @@ import HeaderLink from './HeaderLink.astro';
 import Logo from "../../public/logo.svg";
 ---
 
-<header class="fixed top-4 left-4 right-4 bg-[rgba(255,255,255,.01)] outline outline-1 outline-[rgba(255,255,255,.15)] backdrop-blur-sm rounded-xl">
+<header class="fixed top-4 left-4 right-4 bg-[rgba(255,255,255,.01)] outline outline-1 outline-[rgba(255,255,255,.15)] backdrop-blur-sm rounded-xl" id="header-wrapper">
 	<nav class="flex items-center justify-between px-6 py-4">
 		<a href="/"><img src={Logo.src} alt="Logo" class="h-11" /></a>
 		<div class="flex gap-3">
@@ -13,3 +13,19 @@ import Logo from "../../public/logo.svg";
 		</div>
 	</nav>
 </header>
+
+<style>
+	@media (max-width: 425px) {
+		#header-wrapper {
+			/* height: 3.5rem; */
+		}
+
+		#header-wrapper nav {
+			padding: 0.4rem 1.5rem;
+		}
+
+		#header-wrapper nav a img {
+			height: 2.25rem;
+		}
+	}
+</style>
