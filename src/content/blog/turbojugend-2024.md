@@ -2,7 +2,7 @@
 title: 'Unser Auftritt auf dem Turbojugendtreffen!'
 description: ''
 pubDate: 'Dec 12 2024'
-heroImage: '/blog/ram-2024/11.JPG'
+heroImage: '/blog/blog-placeholder-5.png'
 ---
 
 <div class="image-gallery">
