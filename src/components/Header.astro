@@ -1,7 +1,13 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import Logo from "../../public/logo.svg";
+
+const isIndexPage = Astro.url.pathname === '/';
 ---
+
+{!isIndexPage && (
+  <div class="pointer-events-none fixed top-0 z-40 h-24 w-full bg-gradient-to-b from-[#000]/95 to-transparent"></div>
+)}
 
 <nav class="fixed z-50 flex w-full items-center justify-center px-2 py-4">
 	<div class="relative flex w-full max-w-5xl flex-col items-center rounded-xl border border-[rgba(255,255,255,.15)] bg-rgba(255,255,255,.01)] p-4 lg:flex-row backdrop-blur-sm">
@@ -16,19 +22,3 @@ import Logo from "../../public/logo.svg";
 		</div>
 	</div>
 </nav>
-
-<style>
-	@media (max-width: 425px) {
-		#header-wrapper {
-			/* height: 3.5rem; */
-		}
-
-		#header-wrapper nav {
-			padding: 0.4rem 1.5rem;
-		}
-
-		#header-wrapper nav a img {
-			height: 2.25rem;
-		}
-	}
-</style>
