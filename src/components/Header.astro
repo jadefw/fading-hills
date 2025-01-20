@@ -3,16 +3,19 @@ import HeaderLink from './HeaderLink.astro';
 import Logo from "../../public/logo.svg";
 ---
 
-<header class="fixed top-4 left-4 right-4 bg-[rgba(255,255,255,.01)] outline outline-1 outline-[rgba(255,255,255,.15)] backdrop-blur-sm rounded-xl" id="header-wrapper">
-	<nav class="flex items-center justify-between px-6 py-4">
-		<a href="/"><img src={Logo.src} alt="Logo" class="h-11" /></a>
-		<div class="flex gap-3">
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/member">Mitglieder</HeaderLink>
-			<HeaderLink href="/shop">Shop</HeaderLink>
+<nav class="fixed z-50 flex w-full items-center justify-center px-2 py-4">
+	<div class="relative flex w-full max-w-5xl flex-col items-center rounded-xl border border-[rgba(255,255,255,.15)] bg-rgba(255,255,255,.01)] p-4 lg:flex-row backdrop-blur-sm">
+		<!-- <div class="absolute inset-0 -z-10 rounded-xl" style="backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)"></div> -->
+		<div class="relative flex h-8 w-full items-center justify-between gap-5 pl-1 lg:flex-row">
+			<a href="/"><img src={Logo.src} alt="Logo" class="h-11" /></a>
+			<div class="flex gap-3">
+				<HeaderLink href="/blog">Blog</HeaderLink>
+				<HeaderLink href="/member">Mitglieder</HeaderLink>
+				<HeaderLink href="/shop">Shop</HeaderLink>
+			</div>
 		</div>
-	</nav>
-</header>
+	</div>
+</nav>
 
 <style>
 	@media (max-width: 425px) {
