@@ -10,8 +10,10 @@ import icon from 'astro-icon';
 
 import tunnel from 'astro-tunnel';
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
     site: 'https://example.com',
-    integrations: [mdx(), sitemap(), tailwind(), icon(), tunnel()],
+    integrations: [mdx(), sitemap(), tailwind(), icon(), tunnel(), react()],
 });
