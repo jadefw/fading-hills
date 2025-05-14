@@ -2,16 +2,23 @@
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import Layout from './MainLayout.astro';
+import { Link } from 'astro-link';
+import { ArrowLeft } from "@lucide/astro";
 
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 <Layout title='Blog Post'>
-	<div class="h-[7rem] w-full"></div>
-
 	<main class="max-w-5xl mx-auto px-5 w-screen">
-		<article class="pb-12">
+		<div class="w-full flex justify-center mt-12">
+            <Link href="/blog" class="text-muted-foreground flex items-center gap-2 text-base hover:text-white hover:underline">
+                <ArrowLeft size={20}/>
+                Zurück
+            </Link>
+        </div>
+
+		<article class="pb-12 mt-8">
 			<div class="hero-image">
 				{heroImage && <img width={1020} height={510} src={heroImage} alt="" class="rounded-xl" />}
 			</div>

@@ -1,16 +1,24 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/MainLayout.astro';
+import { Link } from 'astro-link';
+import { ArrowLeft } from "@lucide/astro";
 
 import placeholder from '../../public/placeholder.svg'
 import shirt from '../../public/shop/tshirts.jpg'
 ---
 
-<Layout title="Shop">
-	<div class="h-[7rem] w-full"></div>
-
+<Layout title="Shop | Fading Hills">
     <main class="max-w-5xl mx-auto mb-10">
-        <h1 class="tracking-tight text-center">Shop</h1>
+
+        <div class="w-full flex justify-center mt-12">
+            <Link href="/" class="text-muted-foreground flex items-center gap-2 text-base hover:text-white hover:underline">
+                <ArrowLeft size={20}/>
+                Zurück zur Startseite
+            </Link>
+        </div>
+
+        <h1 class="tracking-tight text-center mt-8">Shop</h1>
 
         <div class="flex flex-col items-center">
             <Image src={shirt} alt="Placeholder" width={400} class="rounded-xl" />

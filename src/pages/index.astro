@@ -1,70 +1,73 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Layout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+import { Link } from "astro-link";
+
+import { ShoppingBag } from "@lucide/astro";
+import Spotify from "../icons/spotify";
+import Instagram from "../icons/instagram";
+import Facebook from "../icons/facebook";
+import YouTube from "../icons/youtube";
+import { Newspaper } from "@lucide/astro";
 ---
 
 <Layout title="Fading Hills - Die Alternative Rock Band">
-	<section id="landing-section" class="flex items-center border-b border-neutral-800">
-		<div class="max-w-5xl mx-auto px-5">
-			<div class="flex flex-col items-center">
-				<a href="/blog/preview-first-single" class="flex items-center bg-neutral-700/40 backdrop-blur-md px-4 py-1 rounded-full border border-neutral-600/40">
-					<span class="text-white text-center text-sm ">Trailer unserer Debut Single!</span>
-				</a>
-				<h1 id="title" class="text-white text-center font-medium">FADING HILLS</h1>
-				<h5 class="text-white opacity-80 text-center text-balance">
-					Fading Hills verbinden Gitarrenriffs mit melodischem Gesang und
-					sind im breiten Feld des Alternative Rock zu Hause. Zwischen hell und
-					dunkel, laut und leise, sind es die feinen Nuancen dazwischen, welche
-					die Band musikalisch transportiert.
-				</h5>
-				<a 
-					href="https://www.instagram.com/fadinghills_official/"
-					target="_blank"
-					class="mt-8 inline-flex items-center justify-center outline-none ring-offset-2 ring-offset-stone-900 transition-[background-color,color,filter,transform,border-color] duration-150 ease-out-quad focus-visible:ring-2 active:scale-[0.975] disabled:cursor-not-allowed disabled:opacity-40 bg-stone-50 font-medium text-stone-950 shadow-[0px_-1px_0px_1px_rgba(0,0,0,0.2)_inset] ring-stone-50 hover:bg-white h-12 gap-2 rounded-lg px-5">
-					Folge uns!
-				</a>
-			</div>
-		</div>
-	</section>
+  <div class="bg-image min-h-[100vh]">
+    <div
+      class="w-full max-w-[500px] mx-auto px-5 min-h-[100vh] flex flex-col items-center justify-center gap-4"
+    >
+      <div class="flex flex-col items-center gap-2">
+        <img src="/logo.svg" alt="Logo" class="h-16" />
+        <p class="text-xl font-normal text-white">Alternative Rock Band</p>
+      </div>
 
-	<section>
-		<div class="max-w-5xl mx-auto px-5 flex flex-col items-center mt-4 md:mt-10">
-			<h3 class="text-center">Hör doch mal rein! ⬇️</h3>
-			<video 
-				class="w-full h-96 max-w-[480px] max-h-[540px] pb-10 rounded-lg"
-				controls
-				poster="/blog/preview-debut-single/preview-first-single.png"
-			>
-				<source src="/blog/preview-debut-single/preview.mp4" type="video/mp4">
-				<source src="/blog/preview-debut-single/preview.mov" type="video/quicktime">
-				Your browser does not support the video tag.
-			</video>
-		</div>
-	</section>
+      <div class="w-full space-y-4">
+			<Card href="https://open.spotify.com/intl-de/track/4gH6ymYtq7ybdzjWYqEv5c?si=b487f7b0e3684508">
+				<Spotify />
+				Unsere erste Single!
+			  </Card>
+        	<Card href="/shop">
+				<ShoppingBag size={20} />
+				Shop
+        	</Card>
+			<Card href="/blog">
+				<Newspaper size={20} />
+				Unser Blog
+        	</Card>
+      </div>
+
+      <div
+        class="flex space-x-4 *:*:w-7 *:*:h-7"
+      >
+        <Link href="https://www.instagram.com/fadinghills_official/">
+          <Instagram />
+        </Link>
+
+        <Link
+          href="https://open.spotify.com/intl-de/artist/5gfJOYr8lUn1MsVW6E9c59?si=qp8BeYxUQbual106kjdlVQ"
+        >
+          <Spotify />
+        </Link>
+
+        <Link
+          href="https://www.facebook.com/p/Fading-Hills-100083297439265/?locale=de_DE"
+        >
+          <Facebook />
+        </Link>
+
+        <Link href="https://www.youtube.com/@fadinghills">
+          <YouTube />
+        </Link>
+      </div>
+    </div>
+  </div>
 </Layout>
 
 <style>
-	#landing-section {
-		background: url("/background.jpg");
-		background-size: cover;
-		background-position: center;
-		height: 100dvh;
-	}
-
-	@media (max-width: 425px) {
-		#landing-section {
-			background-size: 160%;
-			background-repeat: no-repeat;
-			background-position: top;
-			/* margin-top: 7rem; */
-		}
-
-		#landing-section > div {
-			margin-top: 10rem;
-		}
-	}
-
-	#title {
-		text-shadow: 0 0 100px rgba(255, 255, 255, .7);
-	}
+  .bg-image {
+    background-image: url("../../public/background.png");
+    background-size: cover;
+    background-position: center;
+  }
 </style>

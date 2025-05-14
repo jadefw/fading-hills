@@ -2,6 +2,9 @@
 import Layout from '../../layouts/MainLayout.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
+import { Link } from 'astro-link';
+import { ArrowLeft } from "@lucide/astro";
+
 import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
@@ -9,15 +12,21 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 <Layout title='Blog'>
-	<div class="h-[7rem] w-full"></div>
 
 	<main>
-		<section>
+		<div class="w-full flex justify-center mt-12">
+			<Link href="/" class="text-muted-foreground flex items-center gap-2 text-base hover:text-white hover:underline">
+				<ArrowLeft size={20}/>
+				Zurück zur Startseite
+			</Link>
+		</div>
+
+		<section class="mt-8">
 			<ul>
 				{
 					posts.map((post) => (
 						<li>
-							<a href={`/blog/${post.slug}/`} class="hover:opacity-80">
+							<a href={`/blog/${post.slug}/`} class="hover:opacity-80 text-white">
 								<img width={720} height={360} src={post.data.heroImage} alt="" loading="lazy" decoding="async" />
 								<h4 class="title">{post.data.title}</h4>
 								<p class="date">

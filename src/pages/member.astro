@@ -1,6 +1,8 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { Image } from 'astro:assets';
+import { ArrowLeft } from "@lucide/astro";
+import { Link } from 'astro-link';
 import Layout from "../layouts/MainLayout.astro";
 
 import imgNils from '../../public/member/nils.jpg';
@@ -10,10 +12,16 @@ import imgFabian from '../../public/member/fabian.jpg';
 ---
 
 <Layout title={SITE_TITLE}>
-	<div class="h-[7rem] w-full"></div>
 	<main class="max-w-5xl mx-auto mb-10">
 
-		<h1 class="tracking-tight text-center">Unsere Bandmitglieder</h1>
+		<div class="w-full flex justify-center mt-12">
+            <Link href="/" class="text-muted-foreground flex items-center gap-2 text-base hover:text-white hover:underline">
+                <ArrowLeft size={20}/>
+                Zurück zur Startseite
+            </Link>
+        </div>
+
+		<h1 class="tracking-tight text-center mt-8">Unsere Bandmitglieder</h1>
 
 		<div class="flex flex-wrap justify-center gap-y-5 gap-x-10">
 			<div class="flex flex-col items-center">
