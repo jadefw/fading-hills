@@ -4,12 +4,11 @@ import Layout from "../layouts/MainLayout.astro";
 import Card from "../components/Card.astro";
 import { Link } from "astro-link";
 
-import { ShoppingBag } from "@lucide/astro";
 import Spotify from "../icons/spotify";
 import Instagram from "../icons/instagram";
 import Facebook from "../icons/facebook";
 import YouTube from "../icons/youtube";
-import { Newspaper } from "@lucide/astro";
+import { ShoppingBag, Newspaper, HandMetal } from "@lucide/astro";
 ---
 
 <Layout title="Fading Hills - Die Alternative Rock Band">
@@ -34,6 +33,10 @@ import { Newspaper } from "@lucide/astro";
 			<Card href="/blog">
 				<Newspaper size={20} />
 				Unser Blog
+        	</Card>
+			<Card href="/member">
+				<HandMetal size={20} />
+				Bandmitglieder
         	</Card>
       </div>
 
