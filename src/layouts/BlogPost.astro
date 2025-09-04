@@ -7,7 +7,7 @@ import { ArrowLeft } from "@lucide/astro";
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 <Layout title='Blog Post'>
 	<main class="max-w-5xl mx-auto px-5 w-screen">

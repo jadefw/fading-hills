@@ -1,4 +1,3 @@
-import * as React from "react";
 import type { SVGProps } from "react";
 const AppleMusic = (props: SVGProps<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 361 361" width="1em" height="1em" {...props}><linearGradient id="a" x1={180} x2={180} y1={358.605} y2={7.759} gradientUnits="userSpaceOnUse"><stop offset={0} style={{
       stopColor: "#fa233b"
