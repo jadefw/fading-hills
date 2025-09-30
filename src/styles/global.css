@@ -7,7 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-	/* --background: rgb(11, 11, 11); */
 	--background: rgb(0, 0, 0);
 	--heading: rgb(255, 255, 255);
 	--text: rgba(255, 255, 255, 0.7);
@@ -38,23 +37,19 @@ h6 {
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+	@apply text-4xl
 }
 
 h2 {
-	font-size: 2.441em;
+	@apply text-3xl
 }
 
 h3 {
-	font-size: 1.953em;
+	@apply text-2xl
 }
 
 h4 {
-	font-size: 1.563em;
-}
-
-h5 {
-	font-size: 1.25em;
+	@apply text-xl
 }
 
 strong,

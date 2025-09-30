@@ -1,0 +1,16 @@
+---
+import SEO from "./SEO.astro";
+import "../styles/modest.css";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<SEO />
+		<title>{Astro.props.title}</title>
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+	</head>
+	<body>
+        <slot />
+	</body>
+</html>
