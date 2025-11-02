@@ -7,15 +7,25 @@ import Spotify from "../icons/spotify";
 import Instagram from "../icons/instagram";
 import Facebook from "../icons/facebook";
 import YouTube from "../icons/youtube";
-import { ShoppingBag, Newspaper, HandMetal } from "@lucide/astro";
+import { ShoppingBag, Newspaper, HandMetal, Link as LinkIcon } from "@lucide/astro";
 import AmazonMusic from "../icons/amazon-music";
 import AppleMusic from "../icons/apple-music";
 ---
 
 <Layout title="Fading Hills - Die Alternative Rock Band">
-  <div class="bg-image min-h-[100vh]">
+  <div class="relative h-screen w-full overflow-hidden">
+    <video
+      class="absolute top-0 left-0 w-full h-full object-cover"
+      src="/fading-hills-loop.mp4"
+      autoplay
+      loop
+      muted
+      playsinline></video>
+
+    <div class="absolute inset-0 bg-black/50"></div>
+
     <div
-      class="w-full max-w-[500px] mx-auto px-5 min-h-[100vh] flex flex-col items-center justify-center gap-4"
+      class="relative z-10 w-full max-w-[500px] mx-auto px-5 min-h-screen flex flex-col items-center justify-center gap-4"
     >
       <div class="flex flex-col items-center gap-2">
         <img src="/logo.svg" alt="Logo" class="h-16" />
@@ -23,27 +33,31 @@ import AppleMusic from "../icons/apple-music";
       </div>
 
       <div class="w-full space-y-4">
-			<Card href="https://open.spotify.com/intl-de/track/4gH6ymYtq7ybdzjWYqEv5c?si=b487f7b0e3684508">
-				<Spotify />
-				Unsere erste Single!
-			  </Card>
-      <Card href="/shop">
-				<ShoppingBag size={20} />
-				Shop
-    	</Card>
-			<Card href="/blog">
-				<Newspaper size={20} />
-				Unser Blog
-    	</Card>
-			<Card href="/member">
-				<HandMetal size={20} />
-				Bandmitglieder
-      </Card>
+        <Card
+          href="https://open.spotify.com/intl-de/track/4gH6ymYtq7ybdzjWYqEv5c?si=b487f7b0e3684508"
+        >
+          <Spotify />
+          The One And Only Kind - Out Now!
+        </Card>
+        <Card href="/shop">
+          <ShoppingBag size={20} />
+          Shop
+        </Card>
+        <Card href="/blog">
+          <Newspaper size={20} />
+          News
+        </Card>
+        <Card href="/member">
+          <HandMetal size={20} />
+          Band
+        </Card>
+        <Card href="https://fadinghillsofficial.bandcamp.com/track/the-one-and-only-kind">
+          <LinkIcon size={20} />
+          Bandcamp
+        </Card>
       </div>
 
-      <div
-        class="flex space-x-4 *:*:w-7 *:*:h-7"
-      >
+      <div class="flex space-x-4 *:*:w-7 *:*:h-7">
         <Link href="https://www.instagram.com/fadinghills_official/">
           <Instagram />
         </Link>
@@ -60,15 +74,21 @@ import AppleMusic from "../icons/apple-music";
           <Facebook />
         </Link>
 
-        <Link href="https://youtube.com/playlist?list=OLAK5uy_nfAK5OY_yuRyYyFl4VwOwzbQTFH2lCm8s&si=w4K7BOMqwFvUXN9H">
+        <Link
+          href="https://youtube.com/playlist?list=OLAK5uy_nfAK5OY_yuRyYyFl4VwOwzbQTFH2lCm8s&si=w4K7BOMqwFvUXN9H"
+        >
           <YouTube />
         </Link>
 
-        <Link href="https://music.amazon.de/albums/B0F3PH11B5?do=play&trackAsin=B0F3PK79KZ&ts=1747211700&ref=dm_sh_cL1icobzWL34QCd8VQgChvkWi">
+        <Link
+          href="https://music.amazon.de/albums/B0F3PH11B5?do=play&trackAsin=B0F3PK79KZ&ts=1747211700&ref=dm_sh_cL1icobzWL34QCd8VQgChvkWi"
+        >
           <AmazonMusic />
         </Link>
 
-        <Link href="https://music.apple.com/de/album/the-one-and-only-kind/1806707382?i=1806707383">
+        <Link
+          href="https://music.apple.com/de/album/the-one-and-only-kind/1806707382?i=1806707383"
+        >
           <AppleMusic />
         </Link>
       </div>
