@@ -7,23 +7,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-	--background: rgb(0, 0, 0);
-	--heading: rgb(255, 255, 255);
-	--text: rgba(255, 255, 255, 0.7);
+  --background: rgb(0, 0, 0);
+  --heading: rgb(255, 255, 255);
+  --text: rgba(255, 255, 255, 0.7);
 }
 
 body {
-	font-family: 'Inter', sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	background: var(--background);
-	background-size: 100% 600px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	color: var(--text);
-	font-size: 18px;
-	line-height: 1.7;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background: var(--background);
+  background-size: 100% 600px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 h1,
@@ -32,29 +32,29 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5rem 0;
-	color: var(--heading);
-	line-height: 1.2;
+  margin: 0 0 0.5rem 0;
+  color: var(--heading);
+  line-height: 1.2;
 }
 h1 {
-	@apply text-4xl
+  @apply text-4xl;
 }
 
 h2 {
-	@apply text-3xl
+  @apply text-3xl;
 }
 
 h3 {
-	@apply text-2xl
+  @apply text-2xl;
 }
 
 h4 {
-	@apply text-xl
+  @apply text-xl;
 }
 
 strong,
 b {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 /* p {
@@ -62,38 +62,37 @@ b {
 } */
 
 .prose p {
-	margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 720px) {
-	body {
-		font-size: 16px;
-	}
-	main {
-		padding: 1em;
-	}
+  body {
+    font-size: 16px;
+  }
+  main {
+    padding: 1em;
+  }
 }
 
 .sr-only {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
-	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
-	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
-	white-space: nowrap;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px 1px 1px 1px);
+  /* maybe deprecated but we need to support legacy browsers */
+  clip: rect(1px, 1px, 1px, 1px);
+  /* modern browsers, clip-path works inwards from each corner */
+  clip-path: inset(50%);
+  /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
+  white-space: nowrap;
 }
-
