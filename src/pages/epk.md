@@ -33,17 +33,16 @@ https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2
 - Amazon Music:
 https://music.amazon.de/search/heart+full+of+everything?filter=IsLibrary%7Cfalse&sc=none
 
-#### Fotos
+### Fotos
 
 [Gruppenfoto](/background.png)
 
-#### Musikvideos:
+### Musikvideos:
 
-[The One And Only Kind](https://www.youtube.com/watch?v=JqNOPkhlIec)
+- [The One And Only Kind](https://www.youtube.com/watch?v=JqNOPkhlIec)
+- [Heart Full of Everything](https://www.youtube.com/watch?v=Awbs1CMT9TE&list=RDAwbs1CMT9TE&start_radio=1)
 
-[Heart Full of Everything](https://www.youtube.com/watch?v=Awbs1CMT9TE&list=RDAwbs1CMT9TE&start_radio=1)
-
-#### Kontakt
+### Kontakt
 
 - E-Mail: fading.hills.official@gmx.de
 - Website: https://www.fading-hills.de
