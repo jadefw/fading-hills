@@ -30,13 +30,24 @@ https://open.spotify.com/intl-de/track/4gH6ymYtq7ybdzjWYqEv5c?si=132d7c99489c
 - Amazon Music:
 https://music.amazon.de/albums/B0F3PH11B5?marketplaceId=A1PA6795U
 
+Single: Heart Full Of Everything (2025)
+
+#### Streaming & Download
+
+- Spotify:
+https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2
+- Amazon Music:
+https://music.amazon.de/search/heart+full+of+everything?filter=IsLibrary%7Cfalse&sc=none
+
 #### Fotos
 
 [Gruppenfoto](/background.png)
 
-#### Musikvideo:
+#### Musikvideos:
 
 [The One And Only Kind](https://www.youtube.com/watch?v=JqNOPkhlIec)
+
+[Heart Full of Everything](https://www.youtube.com/watch?v=Awbs1CMT9TE&list=RDAwbs1CMT9TE&start_radio=1)
 
 #### Kontakt
 
