@@ -8,32 +8,26 @@ title: Fading Hills - Electronic Press Kit
 ```
 Electronic Press Kit
 ```
-#### Über uns
+### Über uns
 
 Fading Hills liefern energiegeladenen Alternative Rock mit packenden Melodien, druckvollen Riffs und Texten, die berühren. Ob auf Festivalbühnen oder in Clubs – die vier Musiker begeistern mit intensiven Live-Shows und einem unverwechselbaren Sound, der lange nachhallt. Für Fans von: Biffy Clyro, Foo Fighters, The Killers.
 
-#### Band
+### Band
 
 - Nils – Vocals, Gitarre
 - Olli – Gitarre
 - Alex – Bass
 - Fabian – Drums
 
-#### Musik
+### Musik
 
-Single: The One And Only Kind (2025)
-
-#### Streaming & Download
-
+#### The One And Only Kind (2025)
 - Spotify:
 https://open.spotify.com/intl-de/track/4gH6ymYtq7ybdzjWYqEv5c?si=132d7c99489c
 - Amazon Music:
 https://music.amazon.de/albums/B0F3PH11B5?marketplaceId=A1PA6795U
 
-Single: Heart Full Of Everything (2025)
-
-#### Streaming & Download
-
+#### Heart Full Of Everything (2025)
 - Spotify:
 https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2
 - Amazon Music:
