@@ -6,15 +6,22 @@ import Spotify from "../icons/spotify";
 import Instagram from "../icons/instagram";
 import Facebook from "../icons/facebook";
 import YouTube from "../icons/youtube";
-import { ShoppingBag, Newspaper, HandMetal, Link as LinkIcon, Clapperboard } from "@lucide/astro";
+import {
+  ShoppingBag,
+  Newspaper,
+  HandMetal,
+  Link as LinkIcon,
+  Clapperboard,
+  Megaphone,
+} from "@lucide/astro";
 import AmazonMusic from "../icons/amazon-music";
 import AppleMusic from "../icons/apple-music";
 ---
 
 <Layout title="Fading Hills - Die Alternative Rock Band">
-    <Link href="/imprint" class="absolute z-20 right-14 bottom-10">
-        Impressum
-    </Link>
+  <Link href="/imprint" class="absolute z-20 right-14 bottom-10">
+    Impressum
+  </Link>
   <div class="relative h-screen w-full overflow-hidden">
     <video
       class="absolute top-0 left-0 w-full h-full object-cover"
@@ -35,13 +42,21 @@ import AppleMusic from "../icons/apple-music";
       </div>
 
       <div class="w-full space-y-4">
-        <Card href="https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2?si=417e7bd5a8d9498d">
+        <!-- <Card href="https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2?si=417e7bd5a8d9498d">
             <Spotify />
             Heart Full Of Everything - Out Now!
         </Card>
         <Card href="https://open.spotify.com/intl-de/track/4gH6ymYtq7ybdzjWYqEv5c?si=7977d4a068a8423f">
             <Spotify />
             The One And Only Kind - Out Now!
+        </Card> -->
+        <Card href="/blog/rock-im-daal-ankuendigung/">
+          <Megaphone size={20} />
+          Wir spielen auf dem Rock im Daal
+        </Card>
+        <Card href="/blog/lott-ankuendigung/">
+          <Megaphone size={20} />
+          Wir spielen auf der Lott
         </Card>
         <Card href="/shop">
           <ShoppingBag size={20} />
@@ -59,7 +74,9 @@ import AppleMusic from "../icons/apple-music";
           <Clapperboard size={20} />
           Videos
         </Card>
-        <Card href="https://fadinghillsofficial.bandcamp.com/track/the-one-and-only-kind">
+        <Card
+          href="https://fadinghillsofficial.bandcamp.com/track/the-one-and-only-kind"
+        >
           <LinkIcon size={20} />
           Bandcamp
         </Card>
