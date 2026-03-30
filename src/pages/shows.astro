@@ -1,0 +1,137 @@
+---
+import Layout from "../layouts/MainLayout.astro";
+import { Link } from "astro-link";
+import { ArrowLeft } from "@lucide/astro";
+import showsData from "../content/shows.json";
+
+const shows = showsData.sort(
+  (a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf(),
+);
+
+const today = new Date();
+const upcomingShows = shows.filter((show) => new Date(show.date) >= today);
+const pastShows = shows.filter((show) => new Date(show.date) < today);
+
+function formatDate(dateStr: string): string {
+  const date = new Date(dateStr);
+  return date.toLocaleDateString("de-DE", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+}
+
+function formatDateRange(startStr: string, endStr: string): string {
+  const start = new Date(startStr);
+  const end = new Date(endStr);
+  const startStrFormatted = start.toLocaleDateString("de-DE", {
+    day: "2-digit",
+    month: "2-digit",
+  });
+  const endStrFormatted = end.toLocaleDateString("de-DE", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+  return `${startStrFormatted} - ${endStrFormatted}`;
+}
+---
+
+<Layout title="Shows - Fading Hills">
+  <main>
+    <div class="w-full flex justify-center mt-12">
+      <Link
+        href="/"
+        class="text-white/60 flex items-center gap-2 text-base hover:text-white hover:underline"
+      >
+        <ArrowLeft size={20} />
+        Zurück zur Startseite
+      </Link>
+    </div>
+
+    <h1 class="text-white text-center text-4xl mt-8 mb-12">Shows</h1>
+
+    {
+      upcomingShows.length > 0 && (
+        <section class="mb-16">
+          {/* <h2 class="text-white text-2xl mb-6">Kommende Shows</h2> */}
+          <ul class="space-y-4">
+            {upcomingShows.map((show) => (
+              <li class="bg-white/5 backdrop-blur-md p-6 rounded-lg border border-white/10">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                  <div>
+                    <h3 class="text-white text-xl ">{show.title}</h3>
+                    <p class="text-white/70">
+                      {show.venue} • {show.location}
+                    </p>
+                    {show.link && (
+                      <a
+                        href={show.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-blue-400 hover:text-blue-300 text-sm mt-1 inline-block"
+                      >
+                        Tickets & Infos →
+                      </a>
+                    )}
+                  </div>
+                  <div class="text-white">
+                    {show.endDate ? (
+                      <span>{formatDateRange(show.date, show.endDate)}</span>
+                    ) : (
+                      <span>{formatDate(show.date)}</span>
+                    )}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      pastShows.length > 0 && (
+        <section>
+          <h2 class="text-white/60 text-2xl mb-6">Vergangene Shows</h2>
+          <ul class="space-y-4">
+            {pastShows.map((show) => (
+              <li class="bg-white/5 backdrop-blur-md p-6 rounded-lg border border-white/10 opacity-60">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                  <div>
+                    <h3 class="text-white text-xl font-bold">{show.title}</h3>
+                    <p class="text-white/70">
+                      {show.venue} • {show.location}
+                    </p>
+                  </div>
+                  <div class="text-white">
+                    {show.endDate ? (
+                      <span>{formatDateRange(show.date, show.endDate)}</span>
+                    ) : (
+                      <span>{formatDate(show.date)}</span>
+                    )}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      shows.length === 0 && (
+        <p class="text-white/60 text-center">Keine Shows geplant.</p>
+      )
+    }
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 800px;
+    margin-inline: auto;
+    margin-bottom: 40px;
+    padding: 0 1rem;
+  }
+</style>
