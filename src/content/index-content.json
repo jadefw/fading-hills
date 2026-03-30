@@ -1,0 +1,60 @@
+{
+  "cards": [
+    {
+      "href": "/shows/",
+      "label": "Shows",
+      "icon": "Calendar"
+    },
+    {
+      "href": "/shop",
+      "label": "Shop",
+      "icon": "ShoppingBag"
+    },
+    {
+      "href": "/blog",
+      "label": "News",
+      "icon": "Newspaper"
+    },
+    {
+      "href": "/member",
+      "label": "Band",
+      "icon": "HandMetal"
+    },
+    {
+      "href": "/videos",
+      "label": "Videos",
+      "icon": "Clapperboard"
+    },
+    {
+      "href": "https://fadinghillsofficial.bandcamp.com/track/the-one-and-only-kind",
+      "label": "Bandcamp",
+      "icon": "LinkIcon"
+    }
+  ],
+  "socials": [
+    {
+      "href": "https://www.instagram.com/fadinghills_official/",
+      "icon": "Instagram"
+    },
+    {
+      "href": "https://open.spotify.com/intl-de/artist/5gfJOYr8lUn1MsVW6E9c59?si=qp8BeYxUQbual106kjdlVQ",
+      "icon": "Spotify"
+    },
+    {
+      "href": "https://www.facebook.com/p/Fading-Hills-100083297439265/?locale=de_DE",
+      "icon": "Facebook"
+    },
+    {
+      "href": "https://youtube.com/playlist?list=OLAK5uy_nfAK5OY_yuRyYyFl4VwOwzbQTFH2lCm8s&si=w4K7BOMqwFvUXN9H",
+      "icon": "YouTube"
+    },
+    {
+      "href": "https://music.amazon.de/albums/B0F3PH11B5?do=play&trackAsin=B0F3PK79KZ&ts=1747211700&ref=dm_sh_cL1icobzWL34QCd8VQgChvkWi",
+      "icon": "AmazonMusic"
+    },
+    {
+      "href": "https://music.apple.com/de/album/the-one-and-only-kind/1806707382?i=1806707383",
+      "icon": "AppleMusic"
+    }
+  ]
+}

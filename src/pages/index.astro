@@ -1,22 +1,12 @@
 ---
 import Layout from "../layouts/MainLayout.astro";
 import Card from "../components/Card.astro";
+import Icon from "../components/Icon.astro";
 import { Link } from "astro-link";
 import Spotify from "../icons/spotify";
-import Instagram from "../icons/instagram";
-import Facebook from "../icons/facebook";
-import YouTube from "../icons/youtube";
-import {
-  ShoppingBag,
-  Newspaper,
-  HandMetal,
-  Link as LinkIcon,
-  Clapperboard,
-  Calendar,
-} from "@lucide/astro";
-import AmazonMusic from "../icons/amazon-music";
-import AppleMusic from "../icons/apple-music";
+import { Calendar } from "@lucide/astro";
 import showsData from "../content/shows.json";
+import contentData from "../content/index-content.json";
 
 const today = new Date();
 const upcomingShows = showsData
@@ -66,74 +56,24 @@ function formatDate(dateStr: string): string {
             </Card>
           )
         }
-        <Card
-          href="https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2?si=417e7bd5a8d9498d"
-        >
+        <Card href="https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2?si=417e7bd5a8d9498d">
           <Spotify />
           Heart Full Of Everything - Out Now!
         </Card>
-        <Card href="/shows/">
-          <Calendar size={20} />
-          Shows
-        </Card>
-        <Card href="/shop">
-          <ShoppingBag size={20} />
-          Shop
-        </Card>
-        <Card href="/blog">
-          <Newspaper size={20} />
-          News
-        </Card>
-        <Card href="/member">
-          <HandMetal size={20} />
-          Band
-        </Card>
-        <Card href="/videos">
-          <Clapperboard size={20} />
-          Videos
-        </Card>
-        <Card
-          href="https://fadinghillsofficial.bandcamp.com/track/the-one-and-only-kind"
-        >
-          <LinkIcon size={20} />
-          Bandcamp
-        </Card>
+        {contentData.cards.map((card) => (
+          <Card href={card.href}>
+            <Icon name={card.icon} size={20} />
+            {card.label}
+          </Card>
+        ))}
       </div>
 
       <div class="flex space-x-4 *:*:w-7 *:*:h-7">
-        <Link href="https://www.instagram.com/fadinghills_official/">
-          <Instagram />
-        </Link>
-
-        <Link
-          href="https://open.spotify.com/intl-de/artist/5gfJOYr8lUn1MsVW6E9c59?si=qp8BeYxUQbual106kjdlVQ"
-        >
-          <Spotify />
-        </Link>
-
-        <Link
-          href="https://www.facebook.com/p/Fading-Hills-100083297439265/?locale=de_DE"
-        >
-          <Facebook />
-        </Link>
-
-        <Link
-          href="https://youtube.com/playlist?list=OLAK5uy_nfAK5OY_yuRyYyFl4VwOwzbQTFH2lCm8s&si=w4K7BOMqwFvUXN9H"
-        >
-          <YouTube />
-        </Link>
-
-        <Link
-          href="https://music.amazon.de/albums/B0F3PH11B5?do=play&trackAsin=B0F3PK79KZ&ts=1747211700&ref=dm_sh_cL1icobzWL34QCd8VQgChvkWi"
-        >
-          <AmazonMusic />
-        </Link>
-
-        <Link
-          href="https://music.apple.com/de/album/the-one-and-only-kind/1806707382?i=1806707383"
-        >
-          <AppleMusic />
-        </Link>
+        {contentData.socials.map((social) => (
+          <Link href={social.href}>
+            <Icon name={social.icon} />
+          </Link>
+        ))}
       </div>
     </div>
   </div>

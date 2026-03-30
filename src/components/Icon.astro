@@ -1,0 +1,42 @@
+---
+import {
+  ShoppingBag,
+  Newspaper,
+  HandMetal,
+  Link as LinkIcon,
+  Clapperboard,
+  Calendar,
+} from "@lucide/astro";
+import Spotify from "../icons/spotify";
+import Instagram from "../icons/instagram";
+import Facebook from "../icons/facebook";
+import YouTube from "../icons/youtube";
+import AmazonMusic from "../icons/amazon-music";
+import AppleMusic from "../icons/apple-music";
+
+interface Props {
+  name: string;
+  size?: number;
+}
+
+const { name, size = 20 } = Astro.props;
+
+const icons: Record<string, any> = {
+  ShoppingBag,
+  Newspaper,
+  HandMetal,
+  LinkIcon,
+  Clapperboard,
+  Calendar,
+  Spotify,
+  Instagram,
+  Facebook,
+  YouTube,
+  AmazonMusic,
+  AppleMusic,
+};
+
+const IconComponent = icons[name];
+---
+
+{IconComponent && <IconComponent size={size} />}
