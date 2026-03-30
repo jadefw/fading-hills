@@ -4,7 +4,16 @@ import { Link } from "astro-link";
 import { ArrowLeft } from "@lucide/astro";
 import showsData from "../content/shows.json";
 
-const shows = showsData.sort(
+type Show = {
+  title: string;
+  venue: string;
+  location: string;
+  date: string;
+  link: string;
+  endDate?: string;
+};
+
+const shows = (showsData as Show[]).sort(
   (a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf(),
 );
 
