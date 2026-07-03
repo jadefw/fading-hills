@@ -6,6 +6,11 @@
       "icon": "Calendar"
     },
     {
+      "href": "/songs",
+      "label": "Songs",
+      "icon": "MicVocal"
+    },
+    {
       "href": "/shop",
       "label": "Shop",
       "icon": "ShoppingBag"
