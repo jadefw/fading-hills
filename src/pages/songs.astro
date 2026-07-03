@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/MainLayout.astro";
+
+import songs from "../content/songs.json";
+import { ArrowLeft } from "@lucide/astro";
+import Icon from "../components/Icon.astro";
+---
+
+<Layout title="Songs">
+  <div class="w-full flex justify-center mt-12">
+    <a
+      href="/"
+      class="text-white/60 flex items-center gap-2 text-base hover:text-white hover:underline"
+    >
+      <ArrowLeft size={20} />
+      Zurück zur Startseite
+    </a>
+  </div>
+
+  <h1 class="text-white text-center text-4xl mt-8 mb-12">Shows</h1>
+  <ul
+    class="w-full max-w-[500px] mx-auto px-5 *:border-b last:*:border-b-0 *:border-white/20"
+  >
+    {
+      songs.map((song) => (
+        <li class="flex items-center justify-between py-3">
+          {song.title}
+          <div class="flex space-x-5 *:*:w-7 *:*:h-7">
+            <a href={song.spotify} target="_blank" rel="noopener noreferrer">
+              <Icon name="Spotify" />
+            </a>
+            <a href={song.amazon} target="_blank" rel="noopener noreferrer">
+              <Icon name="AmazonMusic" />
+            </a>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
