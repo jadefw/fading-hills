@@ -33,7 +33,7 @@ https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2
 - Amazon Music:
 https://music.amazon.de/search/heart+full+of+everything?filter=IsLibrary%7Cfalse&sc=none
 
-### Let The Monster Starve
+#### Let The Monster Starve
 - Spotify:
 https://open.spotify.com/intl-de/track/4mU1BQ90klXglo1o7dB0Vp?si=d29e9cc15fa444e4
 - Amazon Music:
@@ -47,6 +47,7 @@ https://music.amazon.de/albums/B0H469NST4?marketplaceId=A1PA6795UKMFR9&musicTerr
 
 - [The One And Only Kind](https://www.youtube.com/watch?v=JqNOPkhlIec)
 - [Heart Full of Everything](https://www.youtube.com/watch?v=Awbs1CMT9TE&list=RDAwbs1CMT9TE&start_radio=1)
+- [Let The Monster Starve](https://www.youtube.com/watch?v=aJI78h0hihA&list=RDaJI78h0hihA&start_radio=1)
 
 ### Kontakt
 
