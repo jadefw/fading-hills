@@ -4,7 +4,9 @@ import Layout from '../layouts/MainLayout.astro';
 import { Link } from 'astro-link';
 import { ArrowLeft } from "@lucide/astro";
 
-import shirt from '../../public/shop/tshirts.jpg'
+import wristband from '../../public/shop/wristband.jpg'
+import shirtNew from '../../public/shop/tshirt-hfoe.jpg'
+import shirtOld from '../../public/shop/tshirts.jpg'
 ---
 
 <Layout title="Shop | Fading Hills">
@@ -19,12 +21,28 @@ import shirt from '../../public/shop/tshirts.jpg'
 
         <h1 class="tracking-tight text-center mt-8">Shop</h1>
 
-        <div class="flex flex-col items-center">
-            <Image src={shirt} alt="Placeholder" width={400} class="rounded-xl" />
-            <p class="mt-2">
-                Band Tshirt <br />
-                <b>24,99€</b>
-            </p>
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center items-start gap-10 mt-4">
+            <div class="flex flex-col items-center">
+                <Image src={wristband} alt="Fading Hills Armband" width={400} class="rounded-xl" />
+                <p class="mt-2 text-center">
+                    Armband <br />
+                    <b>3,-€</b>
+                </p>
+            </div>
+            <div class="flex flex-col items-center">
+                <Image src={shirtNew} alt="Band Tshirt" width={400} class="rounded-xl" />
+                <p class="mt-2 text-center">
+                    Band Tshirt <br />
+                    <b>24,99€</b>
+                </p>
+            </div>
+            <div class="flex flex-col items-center">
+                <Image src={shirtOld} alt="Band Tshirt Let The Monster Starve" width={400} class="rounded-xl" />
+                <p class="mt-2 text-center">
+                    Band Tshirt "Let The Monster Starve" <br />
+                    <b>24,99€</b>
+                </p>
+            </div>
         </div>
 
         <p class="text-center mt-5">
