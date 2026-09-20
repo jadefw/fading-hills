@@ -20,9 +20,8 @@ Hier sind ein paar Eindrücke für euch!
 
 <style>
   .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    columns: 2;
+    column-gap: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
@@ -32,5 +31,14 @@ Hier sind ein paar Eindrücke für euch!
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+    margin-bottom: 1rem;
+    break-inside: avoid;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .image-gallery {
+      columns: 1;
+    }
   }
 </style>
