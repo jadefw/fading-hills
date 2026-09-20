@@ -25,19 +25,19 @@ Fading Hills liefern energiegeladenen Alternative Rock mit packenden Melodien, d
 - Spotify:
 https://open.spotify.com/intl-de/track/4gH6ymYtq7ybdzjWYqEv5c?si=132d7c99489c
 - Amazon Music:
-https://music.amazon.de/albums/B0F3PH11B5?marketplaceId=A1PA6795U
+https://music.amazon.de/albums/B0F3PH11B5
 
 #### Heart Full Of Everything (2025)
 - Spotify:
 https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2
 - Amazon Music:
-https://music.amazon.de/search/heart+full+of+everything?filter=IsLibrary%7Cfalse&sc=none
+https://music.amazon.de/albums/B0FZWKMHZG
 
 #### Let The Monster Starve
 - Spotify:
 https://open.spotify.com/intl-de/track/4mU1BQ90klXglo1o7dB0Vp?si=d29e9cc15fa444e4
 - Amazon Music:
-https://music.amazon.de/albums/B0H469NST4?marketplaceId=A1PA6795UKMFR9&musicTerritory=DE&ref=dm_sh_tdTVL7dhSyb5aeNemOdHxjSTI&trackAsin=B0H4695RPD
+https://music.amazon.de/albums/B0H469NST4
 
 ### Fotos
 
