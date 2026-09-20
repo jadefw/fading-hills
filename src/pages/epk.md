@@ -33,6 +33,12 @@ https://open.spotify.com/intl-de/track/4FsciTjtJ0ouHL5mMl7dA2
 - Amazon Music:
 https://music.amazon.de/search/heart+full+of+everything?filter=IsLibrary%7Cfalse&sc=none
 
+### Let The Monster Starve
+- Spotify:
+https://open.spotify.com/intl-de/track/4mU1BQ90klXglo1o7dB0Vp?si=d29e9cc15fa444e4
+- Amazon Music:
+https://music.amazon.de/albums/B0H469NST4?marketplaceId=A1PA6795UKMFR9&musicTerritory=DE&ref=dm_sh_tdTVL7dhSyb5aeNemOdHxjSTI&trackAsin=B0H4695RPD
+
 ### Fotos
 
 [Gruppenfoto](/background.png)
