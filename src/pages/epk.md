@@ -43,6 +43,18 @@ https://music.amazon.de/albums/B0H469NST4
 
 [Gruppenfoto](/background.png)
 
+[Alex (Lott-Festival 2026)](/epk/Alex.jpg)
+
+[Band (Lott-Festival 2026)](/epk/Band.jpg)
+
+[Fabian (Lott-Festival 2026)](/epk/Fabian.jpg)
+
+[Nils (Lott-Festival 2026)](/epk/Nils.jpg)
+
+[Oliver (Lott-Festival 2026)](/epk/Oliver.jpg)
+
+[Stage (Lott-Festival 2026)](/epk/Stage.jpg)
+
 ### Musikvideos:
 
 - [The One And Only Kind](https://www.youtube.com/watch?v=JqNOPkhlIec)
