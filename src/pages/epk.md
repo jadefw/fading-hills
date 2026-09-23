@@ -43,6 +43,14 @@ https://music.amazon.de/albums/B0H469NST4
 
 [Gruppenfoto](/background.png)
 
+![Fading Hills live beim Lott-Festival 2026](/epk-lott-2026-5109.jpg)
+
+![Fading Hills live beim Lott-Festival 2026](/epk-lott-2026-5260.jpg)
+
+![Fading Hills live beim Lott-Festival 2026](/epk-lott-2026-5270.jpg)
+
+![Fading Hills beim Lott-Festival 2026](/epk-lott-2026-3456.jpg)
+
 ### Musikvideos:
 
 - [The One And Only Kind](https://www.youtube.com/watch?v=JqNOPkhlIec)
