@@ -49,6 +49,14 @@ https://music.amazon.de/albums/B0H469NST4
 - [Heart Full of Everything](https://www.youtube.com/watch?v=Awbs1CMT9TE&list=RDAwbs1CMT9TE&start_radio=1)
 - [Let The Monster Starve](https://www.youtube.com/watch?v=aJI78h0hihA&list=RDaJI78h0hihA&start_radio=1)
 
+### Tech-Rider
+
+[Tech-Rider (PDF)](/Tech-Rider.pdf)
+
+[![Tech-Rider Seite 1](/tech-rider-1.png)](/Tech-Rider.pdf)
+
+[![Tech-Rider Seite 2](/tech-rider-2.png)](/Tech-Rider.pdf)
+
 ### Kontakt
 
 - E-Mail: fading.hills.official@gmx.de
