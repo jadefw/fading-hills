@@ -57,7 +57,7 @@ https://music.amazon.de/albums/B0H469NST4
 
 ### Live-Videos
 
-- [Livevideo](https://youtube.com/watch?v=oEzq43PxTxw&is=bBifFXAU36pmZEl-)
+- [FADING HILLS – Alternative Rock | LIVE 2026](https://youtube.com/watch?v=oEzq43PxTxw&is=bBifFXAU36pmZEl-)
 
 ### Musikvideos:
 
