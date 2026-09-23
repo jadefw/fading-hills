@@ -55,6 +55,10 @@ https://music.amazon.de/albums/B0H469NST4
 
 [Stage (Lott-Festival 2026)](/epk/Stage.jpg)
 
+### Live-Videos
+
+- [Livevideo](https://youtube.com/watch?v=oEzq43PxTxw&is=bBifFXAU36pmZEl-)
+
 ### Musikvideos:
 
 - [The One And Only Kind](https://www.youtube.com/watch?v=JqNOPkhlIec)
