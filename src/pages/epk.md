@@ -55,9 +55,9 @@ https://music.amazon.de/albums/B0H469NST4
 
 [Stage (Lott-Festival 2026)](/epk/Stage.jpg)
 
-### Live-Videos
+### Sonstige Video
 
-- [FADING HILLS – Alternative Rock | LIVE 2026](https://youtube.com/watch?v=oEzq43PxTxw&is=bBifFXAU36pmZEl-)
+- [FADING HILLS – Alternative Rock | Lott 2026](https://youtube.com/watch?v=oEzq43PxTxw&is=bBifFXAU36pmZEl-)
 
 ### Musikvideos:
 
